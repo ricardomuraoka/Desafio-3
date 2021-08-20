@@ -1,0 +1,30 @@
+/* Estilização imageHome em home.jsonc  */
+
+.imageElement--BannerImg {
+    border-radius: 25px;
+    margin-top: 50px
+
+}
+
+.searchBarIcon {
+    color: white;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    height: 38px;
+}
+
+.searchBarInnerContainer  :global( .vtex-input-prefix__group) {
+    border:none;
+    border-bottom: solid white 1px;
+    color: white;
+}
+
+.searchBarInnerContainer :global(.vtex-input__suffix){
+    background-color: #212121;
+}
+  
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+    background-color: #212121;
+    justify-content: center;
+}

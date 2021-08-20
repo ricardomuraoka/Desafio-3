@@ -1,0 +1,37 @@
+{
+    "slider-layout#home": {
+        "children": ["image#1", "image#2"],
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "showNavigationArrows": "always",
+          "showPaginationDots": "always",
+          "autoplay": {
+            "timeout": 5000,
+            "stopOnHover": true
+          },
+          "fullWidth": false,
+          "arrowSize": 15
+        }
+      },
+
+  "image#1": {
+    "props": {
+      "src": "assets/banners/BANNER-WOOD.png",
+      "maxHeight": "250px",
+      "blockClass": "BannerImg"
+    }
+  },
+
+  "image#2": {
+    "props": {
+      "src": "assets/banners/GUERREIROS.png",
+      "maxHeight": "250px",
+      "blockClass": "BannerImg"
+    }
+  }
+
+}
