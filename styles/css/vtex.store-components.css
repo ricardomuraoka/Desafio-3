@@ -1,4 +1,4 @@
-/* Estilização imageHome em home.jsonc  */
+/* Estilização dos Banners  */
 
 .imageElement--BannerImg {
     border-radius: 25px;
@@ -27,4 +27,9 @@
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
     background-color: #212121;
     justify-content: center;
+}
+
+.container {
+    margin-top: 15px;
+    color: white
 }

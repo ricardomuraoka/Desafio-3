@@ -1,0 +1,20 @@
+{
+    "product-summary.shelf": {
+      "children": [
+        "product-summary-name",
+        "product-images",
+        "vtex.product-highlights@2.x:product-highlights"
+      ]
+    },
+    "product-images": {
+        "props": {
+        "showNavigationArrows": true,
+        "showPaginationDots": true
+        }
+    },
+    "product-highlight-text": {
+        "props": {
+          "message": "HIGHLIGHT"
+        }
+    }
+}
