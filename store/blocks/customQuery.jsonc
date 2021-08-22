@@ -140,7 +140,7 @@
             }
             }
         ],
-        "GridSummary": "product-summary.shelf#grid"
+        "GridSummary": "product-summary.shelf"
     }
 },
 
@@ -151,18 +151,18 @@
     ]
 },
 
-"product-summary.shelf#grid": {
+"product-summary.shelf": {
     "children": [
         "product-summary-name",
         "product-summary-image",
         "product-summary-space",
         "condition-layout.product",
         "product-summary-price",
-        "link.product#grid"
+        "link.product"
     ]
 },
 
-"link.product#grid": {
+"link.product": {
     "props": {
       "href": "/{slug}/p",
       "label": "Detalhes",

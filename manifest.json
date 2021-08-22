@@ -53,7 +53,10 @@
     "vtex.product-list": "0.x",
     "vtex.store-image": "0.x",
     "vtex.shelf-components": "0.x",
-    "vtex.product-highlights": "2.x"
-  },
+    "vtex.product-highlights": "2.x",
+    "vtex.countdown": "0.x",
+    "vtex.store-icons": "0.x",
+    "vtex.checkout-summary": "0.x"
+    },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

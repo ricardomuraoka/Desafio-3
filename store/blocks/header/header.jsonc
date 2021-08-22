@@ -73,13 +73,6 @@
       "preserveLayoutOnMobile": true,
       "fullWidth": true
     }
-  },
-  "drawer": {
-    "children": []
-  },
-
-  "minicart-product-list": {
-    "blocks": ["product-list"]
   }
 }
  
