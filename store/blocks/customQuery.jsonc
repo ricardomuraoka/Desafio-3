@@ -129,20 +129,25 @@
 "gallery": {
     "props": {
       "layouts": [
-            {
-            "name": "grid",
-            "component": "GridSummary",
-            "itemsPerRow": {
-                "(min-width:1300px)": 2,
-                "desktop": 2,
-                "tablet": 2,
-                "phone": 1
-            }
-            }
-        ],
-        "GridSummary": "product-summary.shelf"
+        {
+          "name": "grid",
+          "component": "GridSummary",
+          "itemsPerRow": {
+            "(min-width:1300px)": 2,
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 1
+          }
+        },
+        {
+          "name": "list",
+          "component": "ListSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "GridSummary": "product-summary.shelf"
     }
-},
+  },
 
 "search-content": {
     "blocks":[
@@ -153,50 +158,12 @@
 
 "product-summary.shelf": {
     "children": [
-        "product-summary-name",
-        "product-summary-image",
-        "product-summary-space",
-        "condition-layout.product",
-        "product-summary-price",
-        "link.product"
-    ]
-},
-
-"link.product": {
-    "props": {
-      "href": "/{slug}/p",
-      "label": "Detalhes",
-      "displayMode": "button"
-    }
-},
-
-"condition-layout.product": {
-    "children":[
-        "condition.product#new"
-    ]
-},
-
-"condition.product#new": {
-    "props": {
-        "conditions": [
-        {
-            "subject": "productId",
-            "verb": "is",
-            "object": "56"
-        }
+      "product-summary-name",
+      "product-summary-description",
+      "product-summary-image",
+      "product-summary-price",
+      "product-summary-sku-selector",
+      "product-summary-buy-button"
         ]
-    },
-    "children": [
-        "rich-text#highlight"
-    ]
-},
-
-"rich-text#highlight": {
-    "props": {
-        "text": "LANÇAMENTO",
-        "blockClass": "highlight",
-        "textAlignment": "center",
-        "textPosition": "center"
     }
-}
 }
