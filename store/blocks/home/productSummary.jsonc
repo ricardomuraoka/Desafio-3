@@ -1,0 +1,46 @@
+{
+"product-summary.shelf": {
+    "children": [
+      "product-summary-name",
+      "product-images",
+      "vtex.product-highlights@2.x:product-highlights",
+      "product-summary-sku-selector",
+      "flex-layout.row#summary"
+        ]
+    },
+    "product-images": {
+        "props": {
+          "displayThumbnailsArrows": true,
+          "showPaginationDots": true
+        }
+    },
+
+    "vtex.product-highlights@2.x:product-highlights": {
+        "children": [
+            "product-highlight-text"
+        ]
+    },
+
+    "product-highlight-text": {
+        "props": {
+          "message": "PRÉ-LANÇAMENTO"
+        }
+    },
+    "flex-layout.row#summary": {
+        "props":{
+            "blockClass": "summary"
+        },
+        "children": [
+            "product-summary-price",
+            "add-to-cart-button"
+        ]
+    },
+
+    "add-to-cart-button": {
+        "props": {
+            "onClickBehavior": "go-to-product-page",
+            "text": "VER DETALHES",
+            "unavailableText": "INDISPONÍVEL"
+        }
+    }
+}

@@ -2,4 +2,8 @@
     background-color: #212121;
 }
 
+.flexRowContent--summary {
+    width: fit-content;
+}
+
 

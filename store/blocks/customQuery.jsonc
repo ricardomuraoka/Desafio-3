@@ -145,6 +145,7 @@
           "itemsPerRow": 1
         }
       ],
+      "ListSummary": "product-summary.shelf",
       "GridSummary": "product-summary.shelf"
     }
   },
@@ -154,16 +155,7 @@
         "gallery",
         "not-found"
     ]
-},
+}
 
-"product-summary.shelf": {
-    "children": [
-      "product-summary-name",
-      "product-summary-description",
-      "product-summary-image",
-      "product-summary-price",
-      "product-summary-sku-selector",
-      "product-summary-buy-button"
-        ]
-    }
+
 }
