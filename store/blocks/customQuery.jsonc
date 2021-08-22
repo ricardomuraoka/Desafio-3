@@ -1,0 +1,202 @@
+// Realizar as buscas a serem atualizar no tab-layout
+
+{
+"search-result-layout.customQuery#tudo": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "upmedal",
+            "mapField": "ft",
+            "skusFilter": "ALL_AVAILABLE"
+        }
+    },
+       "blocks": [
+         "search-result-layout.desktop",
+         "search-result-layout.mobile",
+         "search-not-found-layout"
+        ]
+    },
+"search-result-layout.customQuery#corinthians": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "Corinthians",
+            "mapField": "ft",
+            "skusFilter": "ALL_AVAILABLE"
+        }
+    },
+   "blocks": [
+     "search-result-layout.desktop",
+     "search-result-layout.mobile",
+     "search-not-found-layout"
+    ]
+},
+
+"search-result-layout.customQuery#palmeiras": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "Palmeiras",
+            "mapField": "ft",
+            "skusFilter": "ALL_AVAILABLE"
+        }
+    },
+   "blocks": [
+     "search-result-layout.desktop",
+     "search-result-layout.mobile",
+     "search-not-found-layout"
+    ]
+},
+
+"search-result-layout.customQuery#signos": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "signos",
+            "mapField": "ft",
+            "skusFilter": "ALL_AVAILABLE"
+        }
+    },
+   "blocks": [
+     "search-result-layout.desktop",
+     "search-result-layout.mobile",
+     "search-not-found-layout"
+    ]
+},
+
+"search-result-layout.customQuery#divertidos": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "divertidos",
+            "mapField": "ft",
+            "skusFilter": "ALL_AVAILABLE"
+        }
+    },
+   "blocks": [
+     "search-result-layout.desktop",
+     "search-result-layout.mobile",
+     "search-not-found-layout"
+    ]
+},
+
+"search-result-layout.customQuery#7maravilhas": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "7maravilhas",
+            "mapField": "ft",
+            "skusFilter": "ALL_AVAILABLE"
+        }
+    },
+   "blocks": [
+     "search-result-layout.desktop",
+     "search-result-layout.mobile",
+     "search-not-found-layout"
+    ]
+},
+
+"search-result-layout.customQuery#guerreiros": {
+    "props": {
+        "querySchema": {
+            "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "maxItemsPerPage": 8,
+            "queryField": "guerreiros",
+            "mapField": "ft",
+            "skusFilter": "ALL_AVAILABLE"
+        }
+    },
+   "blocks": [
+     "search-result-layout.desktop",
+     "search-result-layout.mobile",
+     "search-not-found-layout"
+    ]
+},
+
+"gallery": {
+    "props": {
+      "layouts": [
+            {
+            "name": "grid",
+            "component": "GridSummary",
+            "itemsPerRow": {
+                "(min-width:1300px)": 2,
+                "desktop": 2,
+                "tablet": 2,
+                "phone": 1
+            }
+            }
+        ],
+        "GridSummary": "product-summary.shelf#grid"
+    }
+},
+
+"search-content": {
+    "blocks":[
+        "gallery",
+        "not-found"
+    ]
+},
+
+"product-summary.shelf#grid": {
+    "children": [
+        "product-summary-name",
+        "product-summary-image",
+        "product-summary-space",
+        "condition-layout.product",
+        "product-summary-price",
+        "link.product#grid"
+    ]
+},
+
+"link.product#grid": {
+    "props": {
+      "href": "/{slug}/p",
+      "label": "Detalhes",
+      "displayMode": "button"
+    }
+},
+
+"condition-layout.product": {
+    "children":[
+        "condition.product#new"
+    ]
+},
+
+"condition.product#new": {
+    "props": {
+        "conditions": [
+        {
+            "subject": "productId",
+            "verb": "is",
+            "object": "56"
+        }
+        ]
+    },
+    "children": [
+        "rich-text#highlight"
+    ]
+},
+
+"rich-text#highlight": {
+    "props": {
+        "text": "LANÇAMENTO",
+        "blockClass": "highlight",
+        "textAlignment": "center",
+        "textPosition": "center"
+    }
+}
+}

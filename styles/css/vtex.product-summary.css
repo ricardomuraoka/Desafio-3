@@ -1,3 +1,13 @@
-.nameContainer {
-    color: white
+.productBrand {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
 }
+
+.containerNormal {
+    background-color: #212121;
+}
+
+
+

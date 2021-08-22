@@ -1,12 +1,19 @@
+// Ver tab-layout, tentativa frustrada de lincar 
 {
-    "product-summary.shelf": {
+    "product-summary.shelf#home": {
       "children": [
         "product-summary-name",
-        "product-images",
-        "vtex.product-highlights@2.x:product-highlights"
-      ]
+        "product-images#1",
+        "vtex.product-highlights@2.x:product-highlights",
+        "add-to-cart-button"
+      ],
+      "props": [ {
+        "blockClass": "shelf",
+        "showPaginationDots": true
+
+      }]
     },
-    "product-images": {
+    "product-images#1": {
         "props": {
         "showNavigationArrows": true,
         "showPaginationDots": true
@@ -16,5 +23,33 @@
         "props": {
           "message": "HIGHLIGHT"
         }
+    },
+    "add-to-cart-button": {
+      "props": {
+        "onClickBehavior": "add-to-cart",
+        "text": "VER DETALHES"
+      }
+    },
+    "product-summary.shelf#promocao": {
+      "children": [
+        "product-summary-name",
+        "product-images#1",
+        "vtex.product-highlights@2.x:product-highlights",
+        "add-to-cart-button"
+      ],
+      "props": [ {
+        "blockClass": "promocao",
+        "showPaginationDots": true
+
+      }]
+    },
+    "product-images#promocao": {
+        "props": {
+        "showNavigationArrows": true,
+        "showPaginationDots": true
+        }
     }
+   
 }
+
+ 

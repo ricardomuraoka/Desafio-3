@@ -12,6 +12,8 @@
 
 .searchBarContainer :global(.vtex-input-prefix__group) {
     height: 38px;
+    width: 800px;
+    flex-grow: 1;
 }
 
 .searchBarInnerContainer  :global( .vtex-input-prefix__group) {
@@ -26,10 +28,17 @@
   
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
     background-color: #212121;
-    justify-content: center;
 }
 
 .container {
     margin-top: 15px;
-    color: white
+}
+
+.caretIcon {
+    color: #59FF00;
+}
+
+.container--footer {
+    margin-top: 15px;
+    color:red;
 }
